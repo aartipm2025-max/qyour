@@ -84,7 +84,7 @@ export default function DoctorBookingPage() {
             {doctors.map(doc => (
               <div key={doc.id} className="card space-y-2">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-cream-200 flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
                     <User size={22} className="text-taupe-600" />
                   </div>
                   <div>

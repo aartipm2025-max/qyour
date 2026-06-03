@@ -7,9 +7,9 @@ import { useCart } from '@/context/CartContext'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
+  { label: 'How It Works',   href: '/how-it-works' },
   { label: 'Product',        href: '/product' },
   { label: 'Clinical Study', href: '/clinical-study' },
-  { label: 'How It Works',   href: '/how-it-works' },
   { label: 'Blog',           href: '/blog' },
 ]
 
@@ -30,7 +30,7 @@ export default function Navbar() {
         'fixed inset-x-0 top-0 z-50 transition-all duration-300',
         scrolled
           ? 'bg-white/95 backdrop-blur-sm shadow-soft border-b border-cream-200'
-          : 'bg-cream-50/80 backdrop-blur-sm',
+          : 'bg-white/80 backdrop-blur-sm',
       )}
     >
       <div className="container-content">

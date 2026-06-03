@@ -160,8 +160,8 @@ export default function ClinicalStudyPage() {
             ].map(section => (
               <div key={section.title} className="card space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-sand-400/30 flex items-center justify-center shrink-0">
-                    <section.icon size={20} className="text-sand-700" />
+                  <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
+                    <section.icon size={20} className="text-brown-900" />
                   </div>
                   <h3 className="heading-4">{section.title}</h3>
                 </div>

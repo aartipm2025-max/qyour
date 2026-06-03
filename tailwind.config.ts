@@ -10,27 +10,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Warm Sand — primary brand
+        // Black/dark scale — primary brand
         sand: {
-          400: '#E4CAAA',
-          500: '#D4BA96',
-          600: '#C4A882',
-          700: '#B39670',
-          800: '#A08460',
+          400: '#767676',
+          500: '#404040',
+          600: '#111111',
+          700: '#000000',
+          800: '#000000',
         },
-        // Cream backgrounds
+        // White + near-white for section separation
         cream: {
-          50:  '#FAF8F5',
-          100: '#F5F1EB',
-          200: '#EBE4DB',
+          50:  '#FFFFFF',
+          100: '#F7F7F7',
+          200: '#EBEBEB',
         },
         // Taupe accents
         taupe: {
-          400: '#C3B5AA',
-          500: '#AFA094',
-          600: '#9B8B7E',
+          400: '#C0AE9E',
+          500: '#A89888',
+          600: '#907870',
         },
-        // Black text scale
+        // Text scale
         brown: {
           400: '#6b6b6b',
           600: '#3d3d3d',
@@ -40,18 +40,18 @@ const config: Config = {
         },
         // Sage — success / positive health
         sage: {
-          100: '#E8EBE4',
-          600: '#8A9A7B',
+          100: '#D8EDD6',
+          600: '#4A7C3F',
         },
         // Terracotta — warning
         terracotta: {
-          100: '#F0E6DF',
-          500: '#C4957A',
+          100: '#F5E4DA',
+          500: '#C4714A',
         },
         // Coral — error (soft)
         coral: {
-          100: '#F5E8E4',
-          600: '#D4876F',
+          100: '#FDE6E0',
+          600: '#C85A40',
         },
       },
       fontFamily: {
@@ -84,14 +84,14 @@ const config: Config = {
       boxShadow: {
         'card':       '0 4px 16px rgba(0,0,0,0.08)',
         'card-hover': '0 8px 24px rgba(0,0,0,0.12)',
-        'btn-sand':   '0 2px 8px rgba(196,168,130,0.25)',
+        'btn-sand':   '0 2px 8px rgba(0,0,0,0.15)',
         'modal':      '0 24px 48px rgba(0,0,0,0.2)',
         'soft':       '0 2px 8px rgba(0,0,0,0.06)',
       },
       backgroundImage: {
-        'gradient-hero': 'linear-gradient(135deg, #FAF8F5 0%, #F5F1EB 100%)',
-        'gradient-sand': 'linear-gradient(90deg, #D4BA96, #C4A882)',
-        'gradient-sage': 'linear-gradient(90deg, #E8EBE4, #FFFFFF)',
+        'gradient-hero': 'linear-gradient(135deg, #FFFFFF 0%, #FAFAFA 100%)',
+        'gradient-sand': 'linear-gradient(90deg, #404040, #111111)',
+        'gradient-sage': 'linear-gradient(90deg, #D8EDD6, #FFFFFF)',
       },
       keyframes: {
         'fade-up': {

@@ -37,8 +37,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-cream-100 rounded-xl4 p-10 space-y-6">
-              <div className="w-16 h-16 rounded-full bg-sand-400/40 flex items-center justify-center">
-                <Heart size={32} className="text-sand-700" />
+              <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center">
+                <Heart size={32} className="text-brown-900" />
               </div>
               <h3 className="heading-3">Our Mission</h3>
               <p className="body-base text-brown-700 italic font-playfair">
@@ -64,8 +64,8 @@ export default function AboutPage() {
               { icon: Heart, title: 'Transparent Always', desc: 'Full ingredient disclosure, honest timelines, no hidden costs.' },
             ].map(v => (
               <div key={v.title} className="card text-center space-y-4">
-                <div className="w-12 h-12 rounded-full bg-sand-400/40 flex items-center justify-center mx-auto">
-                  <v.icon size={22} className="text-sand-700" />
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
+                  <v.icon size={22} className="text-brown-900" />
                 </div>
                 <h3 className="heading-4">{v.title}</h3>
                 <p className="body-sm text-brown-600">{v.desc}</p>
@@ -91,12 +91,12 @@ export default function AboutPage() {
               { name: 'Dr. Sunita Patel', role: 'Clinical Nutritionist', location: 'Kokilaben Hospital, Mumbai', years: '12 years' },
             ].map(d => (
               <div key={d.name} className="card text-center space-y-3">
-                <div className="w-20 h-20 rounded-full bg-cream-200 flex items-center justify-center mx-auto">
+                <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
                   <Users size={32} className="text-taupe-600" />
                 </div>
                 <div>
                   <p className="font-playfair text-lg font-medium text-brown-900">{d.name}</p>
-                  <p className="body-sm text-sand-700 font-medium">{d.role}</p>
+                  <p className="body-sm text-brown-900 font-medium">{d.role}</p>
                   <p className="body-sm text-brown-500">{d.location}</p>
                   <p className="body-sm text-brown-400">{d.years} experience</p>
                 </div>

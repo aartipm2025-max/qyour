@@ -55,9 +55,9 @@ Over 90 days, these systemic benefits compound, leading to measurable HbA1c redu
             <div key={item.num} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
               <div className={`space-y-5 ${i % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div className="flex items-center gap-3">
-                  <span className="font-playfair text-5xl font-medium text-sand-400">{item.num}</span>
-                  <div className="w-10 h-10 rounded-xl bg-sand-400/30 flex items-center justify-center">
-                    <item.icon size={20} className="text-sand-700" />
+                  <span className="font-playfair text-5xl font-medium text-gray-300">{item.num}</span>
+                  <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center">
+                    <item.icon size={20} className="text-brown-900" />
                   </div>
                 </div>
                 <div>
@@ -72,7 +72,7 @@ Over 90 days, these systemic benefits compound, leading to measurable HbA1c redu
               </div>
               <div className={`bg-cream-100 rounded-xl4 aspect-square flex items-center justify-center ${i % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                 <div className="text-center space-y-3 p-8">
-                  <item.icon size={64} className="text-sand-500 mx-auto" />
+                  <item.icon size={64} className="text-brown-700 mx-auto" />
                   <p className="font-playfair text-xl font-medium text-brown-800">{item.title}</p>
                 </div>
               </div>

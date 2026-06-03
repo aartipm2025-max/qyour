@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: #FAF8F5;
+    --background: #FFFFFF;
     --foreground: #000000;
   }
 
@@ -19,7 +19,7 @@
   }
 
   body {
-    background-color: #FAF8F5;
+    background-color: #FFFFFF;
     color: #000000;
     font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -119,10 +119,10 @@
   }
   .badge-brand {
     @apply inline-flex items-center gap-1
-           bg-sand-400 text-sand-700
+           bg-gray-100 text-brown-900
            px-3.5 py-1.5 rounded-pill
            text-xs font-medium tracking-wide uppercase
-           border border-sand-600;
+           border border-gray-300;
   }
   .badge-dark {
     @apply inline-flex items-center gap-1
@@ -158,7 +158,7 @@
     @apply bg-cream-200 animate-shimmer rounded-xl;
     background-image: linear-gradient(
       90deg,
-      #EBE4DB 0%, #F5F1EB 50%, #EBE4DB 100%
+      #F0F0F0 0%, #FAFAFA 50%, #F0F0F0 100%
     );
     background-size: 200% 100%;
   }

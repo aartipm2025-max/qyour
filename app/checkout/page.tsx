@@ -182,7 +182,7 @@ export default function CheckoutPage() {
               <div className="card space-y-4 sticky top-24">
                 <h3 className="heading-4">Order Summary</h3>
                 <div className="flex items-center gap-4 pb-4 border-b border-cream-200">
-                  <div className="w-12 h-12 rounded-xl bg-sand-400/30 flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
                     <span className="font-playfair font-medium text-sand-700">Q</span>
                   </div>
                   <div>

@@ -67,8 +67,8 @@ export default function ProductPage() {
             {/* Product visual placeholder */}
             <div className="bg-cream-100 rounded-xl4 aspect-square flex items-center justify-center shadow-card">
               <div className="text-center space-y-3">
-                <div className="w-24 h-24 rounded-full bg-sand-400/40 flex items-center justify-center mx-auto">
-                  <Leaf size={40} className="text-sand-700" />
+                <div className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
+                  <Leaf size={40} className="text-brown-900" />
                 </div>
                 <p className="font-playfair text-xl font-medium text-brown-800">QYOUR</p>
                 <p className="font-inter text-sm text-brown-600">60 Capsules · 30-day supply</p>
@@ -118,8 +118,8 @@ export default function ProductPage() {
               { step: '03', title: 'Track Progress', desc: 'Log your glucose readings in the dashboard weekly.', time: 'Weekly' },
             ].map(item => (
               <div key={item.step} className="card space-y-3">
-                <div className="w-12 h-12 rounded-full bg-sand-400/40 flex items-center justify-center mx-auto">
-                  <span className="font-playfair text-lg font-medium text-sand-700">{item.step}</span>
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
+                  <span className="font-playfair text-lg font-medium text-brown-900">{item.step}</span>
                 </div>
                 <p className="font-inter text-xs font-semibold tracking-widest uppercase text-taupe-600">{item.time}</p>
                 <h3 className="heading-4">{item.title}</h3>
@@ -143,31 +143,34 @@ export default function ProductPage() {
             {PLANS.map(plan => (
               <div
                 key={plan.id}
-                className={`relative rounded-xl3 p-8 flex flex-col gap-5 ${
+                className={`relative rounded-xl3 p-8 flex flex-col gap-5 transition-all duration-300 ${
                   plan.id === 'quarterly'
-                    ? 'bg-brown-900 text-cream-50 shadow-modal scale-[1.02]'
-                    : 'bg-white shadow-card'
+                    ? 'bg-white border-2 border-black shadow-lg scale-[1.03]'
+                    : 'bg-white shadow-card border border-gray-100 hover:shadow-card-hover'
                 }`}
               >
                 {plan.id === 'quarterly' && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 badge-brand text-[10px]">
+                  <div className="absolute inset-x-0 top-0 h-1 bg-black rounded-t-xl3" />
+                )}
+                {plan.id === 'quarterly' && (
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 badge-dark text-[10px] whitespace-nowrap px-4">
                     Most Popular
                   </span>
                 )}
                 <div>
-                  <p className={`font-inter text-xs font-semibold tracking-widest uppercase mb-1 ${plan.id === 'quarterly' ? 'text-sand-400' : 'text-taupe-600'}`}>
+                  <p className="font-inter text-xs font-semibold tracking-widest uppercase mb-1 text-taupe-600">
                     {plan.name}
                   </p>
-                  <p className={`font-playfair text-4xl font-medium ${plan.id === 'quarterly' ? 'text-sand-400' : 'text-brown-900'}`}>
+                  <p className={`font-playfair text-4xl font-medium ${plan.id === 'quarterly' ? 'text-brown-900' : 'text-brown-900'}`}>
                     ₹{plan.price.toLocaleString('en-IN')}
                   </p>
-                  <p className={`font-inter text-sm mt-0.5 ${plan.id === 'quarterly' ? 'text-cream-200' : 'text-brown-600'}`}>
+                  <p className="font-inter text-sm mt-0.5 text-brown-600">
                     /{plan.period} · ₹{plan.pricePerMonth}/mo
                   </p>
                 </div>
                 <ul className="space-y-2 flex-1">
                   {['30-day supply', 'Free shipping', '30-day money back', ...(plan.id !== 'monthly' ? ['Free doctor consult'] : [])].map(f => (
-                    <li key={f} className={`flex items-center gap-2 text-sm font-inter ${plan.id === 'quarterly' ? 'text-cream-100' : 'text-brown-800'}`}>
+                    <li key={f} className="flex items-center gap-2 text-sm font-inter text-brown-800">
                       <CheckCircle size={14} className="text-sage-600" />
                       {f}
                     </li>
@@ -177,11 +180,24 @@ export default function ProductPage() {
               </div>
             ))}
           </div>
+          {/* Reassurance row — immediately below pricing (Proximity law) */}
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
+            {[
+              { text: '30-day money-back guarantee' },
+              { text: 'Free shipping across India' },
+              { text: 'Delivered in 3–5 business days' },
+            ].map(({ text }) => (
+              <span key={text} className="font-inter text-xs text-brown-500 flex items-center gap-1.5">
+                <CheckCircle size={13} className="text-sage-600" />
+                {text}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Trust */}
-      <section className="section bg-cream-50">
+      <section className="section bg-cream-100">
         <div className="container-content max-w-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             {[
@@ -190,8 +206,8 @@ export default function ProductPage() {
               { icon: Star, title: '4.8★ Patient Rating', desc: '200+ verified patients, independently reviewed.' },
             ].map(item => (
               <div key={item.title} className="card text-center space-y-3">
-                <div className="w-12 h-12 rounded-full bg-sand-400/40 flex items-center justify-center mx-auto">
-                  <item.icon size={22} className="text-sand-700" />
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
+                  <item.icon size={22} className="text-brown-900" />
                 </div>
                 <h3 className="heading-4">{item.title}</h3>
                 <p className="body-sm text-brown-600">{item.desc}</p>

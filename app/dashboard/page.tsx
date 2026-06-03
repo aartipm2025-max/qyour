@@ -70,7 +70,7 @@ export default function DashboardPage() {
   const getBarWidth = (value: number) => Math.min((value / 250) * 100, 100)
 
   return (
-    <div className="min-h-screen bg-cream-50 pt-24 pb-16 px-4">
+    <div className="min-h-screen bg-white pt-24 pb-16 px-4">
       <div className="container-content max-w-5xl mx-auto space-y-8">
         {/* Header */}
         <div className="flex items-start justify-between gap-4">
@@ -215,14 +215,14 @@ export default function DashboardPage() {
             <button onClick={getInsight} disabled={loadingInsight} className="btn-secondary py-2 px-5 text-xs disabled:opacity-40">
               {loadingInsight ? (
                 <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 border-2 border-sand-600/40 border-t-sand-600 rounded-full animate-spin" />
+                  <span className="w-3 h-3 border-2 border-black/40 border-t-sand-600 rounded-full animate-spin" />
                   Analysing...
                 </span>
               ) : 'Get AI Analysis'}
             </button>
           </div>
           {insight ? (
-            <div className="bg-cream-50 border-l-4 border-sand-600 rounded-r-xl2 p-5">
+            <div className="bg-cream-50 border-l-4 border-black rounded-r-xl2 p-5">
               <p className="font-inter text-sm text-brown-800 leading-relaxed">{insight}</p>
             </div>
           ) : (
