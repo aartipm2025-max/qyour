@@ -2,6 +2,8 @@
 
 An e-commerce website for **QYOUR**, a diabetes-management supplement for the Indian market. It's built with Next.js 14 (App Router), TypeScript and Tailwind CSS, and it uses AI features powered by Groq (Llama 3.3 70B).
 
+📄 **[Read the full project info (PDF)](./PROJECT%20INFO.pdf)**
+
 ## Features
 
 - **Product and subscription plans**: Monthly (₹699), Quarterly (₹1,799) and Annual (₹6,299), plus a cart and a checkout flow
