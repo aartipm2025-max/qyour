@@ -102,3 +102,9 @@ All three routes call Groq on the server, so the API key never reaches the brows
 ## Disclaimer
 
 QYOUR's AI features give general wellness information only. They are not medical advice. Users should consult a qualified doctor before changing any diabetes treatment.
+
+additional info
+
+Quick summary: What and why?
+How everything connects as a story: Next.js provides the application's foundation, TypeScript makes its code more reliable, Tailwind CSS creates its visual interface, and Groq runs the Llama model that provides intelligence. Together, they allow developers to build a complete AI-powered web application.
+Important distinction: Groq is not the AI model; it provides the infrastructure to run the Llama model.
